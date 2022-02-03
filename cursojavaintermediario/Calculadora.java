@@ -17,7 +17,7 @@ public class Calculadora {
     
     private int soma;
     
-    public int somaArray(int [] array){
+    public synchronized int somaArray(int [] array){
         
         soma = 0;
         
