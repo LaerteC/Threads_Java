@@ -36,7 +36,7 @@ public class DeadLock {
                     System.out.println("Thread #1: Bloqueou recurso 2");
                 }
             }
-        }  
+        }   
       };
       
       Thread t2 = new Thread(){
@@ -47,7 +47,7 @@ public class DeadLock {
                   try {
                       Thread.sleep(120);
                   } catch (InterruptedException ex) {
-                      Logger.getLogger(DeadLock.class.getName()).log(Level.SEVERE, null, ex);
+                                 Logger.getLogger(DeadLock.class.getName()).log(Level.SEVERE, null, ex);
                   }
                   
                   System.out.println(" Thread #2: Tentnado o acesso ao recurso 1");
